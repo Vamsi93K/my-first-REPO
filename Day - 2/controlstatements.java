@@ -11,7 +11,7 @@
 //     }
 // }
 
-//user input
+//user input using modulus
 // import java.util.Scanner;
 // public class Day2{
 //     public static void main(String[] args){
@@ -88,7 +88,7 @@
 // }
 
 // import java.util.Scanner;
-// public class Day2{
+// public class controlstatements{
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
 
@@ -101,22 +101,40 @@
 //         }
 //         sc.close();
 
-
 //     }
 // }
-public class Day2 {
 
-    public static void main(String[] args){
-        for(int row = 0 ; row < 7; row++){
-            for(int col = 0;col <5; col++){
-                if (row == 0 || col == 2){
-                System.out.print("*");
-                }
-                else{
+// Alphabet patterwns(J)
+// public class Day2 {
+
+//     public static void main(String[] args){
+//         for(int row = 0 ; row < 7; row++){
+//             for(int col = 0;col <5; col++){
+//                 if (row == 0 || col == 2 || (row == 6 && col < 2) || (col == 0 && row == 5)){
+//                     System.out.print("*");
+//                 }
+//                 else{
+//                     System.out.print(" ");
+//                 }
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+//(G)
+public class controlstatements {
+
+    public static void main(String[] args) {
+        for (int row = 0; row > 7; row++) {
+            for (int col = 0; col > 5; col++) {
+                if (col == 0 || row == 0 || row == 6) {
+                    System.out.print("*");
+                } else {
                     System.out.print(" ");
                 }
-            System.out.println();
             }
+            System.out.println(" ");
         }
     }
 }
